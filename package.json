@@ -180,7 +180,6 @@
     "tslib": "^2.3.0",
     "tsup": "^8.0.1",
     "type-fest": "4.10.1",
-    "typeorm": "^0.3.17",
     "use-debounce": "^10.0.0",
     "uuid": "^9.0.0",
     "vite-tsconfig-paths": "^4.2.1",
@@ -320,6 +319,7 @@
     "ts-node": "10.9.1",
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.7.2",
+    "typeorm": "^0.3.20",
     "typescript": "5.3.3",
     "vite": "^5.0.0",
     "vite-plugin-checker": "^0.6.2",
@@ -343,7 +343,9 @@
   "version": "0.2.1",
   "nx": {},
   "scripts": {
-    "start": "npx nx run-many -t start -p twenty-server twenty-front"
+    "start": "npx nx run-many -t start -p twenty-server twenty-front",
+    "typeorm": "typeorm",
+    "typeorm:migration:run": "typeorm migration:run -d src/data-source.ts"
   },
   "workspaces": {
     "packages": [

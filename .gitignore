@@ -27,3 +27,4 @@ storybook-static
 .eslintcache
 .cache
 .nyc_output
+packages/twenty-front/.zshrc
